@@ -62,6 +62,8 @@
 
 
 
+
+
 // --------------------1) Create a function that takes an object as an argument and decides if the number inside it is evenly divisible by three or not.
 
 // Pseudo code:
@@ -117,6 +119,8 @@ const isDivisible = (object) => {
 
 
 
+
+
 // --------------------2) Create a function that takes in an array of words and returns an array with all the words capitalized.
 
 // Pseudo code:
@@ -154,6 +158,9 @@ const allCaps = (array) => {
 // //output: PASS  ./code-challenges.test.js
 //   allCaps
 //   ✓ takes in an array of words and returns an array with all the words capitalized. (3 ms)
+
+
+
 
 
 
