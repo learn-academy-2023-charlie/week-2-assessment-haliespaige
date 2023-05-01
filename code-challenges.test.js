@@ -62,6 +62,8 @@
 
 
 
+
+
 // --------------------1) Create a function that takes an object as an argument and decides if the number inside it is evenly divisible by three or not.
 
 // Pseudo code:
@@ -85,22 +87,22 @@ const object3 = { number: -7 }
 
 
 
-// describe("isDivisible",() => {
-//     it("decides if the number inside it is evenly divisible by three or not", () => {
-//         expect(isDivisible(object1.number)).toEqual ("15 is divisible by three")
-//         expect(isDivisible(object2.number)).toEqual ("0 is divisible by three")
-//         expect(isDivisible(object3.number)).toEqual ("-7 is not divisible by three")
-//     })
-// })
+describe("isDivisible",() => {
+    it("decides if the number inside it is evenly divisible by three or not", () => {
+        expect(isDivisible(object1.number)).toEqual ("15 is divisible by three")
+        expect(isDivisible(object2.number)).toEqual ("0 is divisible by three")
+        expect(isDivisible(object3.number)).toEqual ("-7 is not divisible by three")
+    })
+})
 
 // // b) Create the function that makes the test pass.
 
-// const isDivisible = (object) => {
-//     if (object% 3 === 0 )  {
-//         return `${object} is divisible by three`
-//     }
-//     else {return `${object} is not divisible by three`}
-// }
+const isDivisible = (object) => {
+    if (object% 3 === 0 )  {
+        return `${object} is divisible by three`
+    }
+    else {return `${object} is not divisible by three`}
+}
 
 // console.log(isDivisible(object1.number))
 // //output: 15 is divisible by three
@@ -112,6 +114,8 @@ const object3 = { number: -7 }
 // // //output:  PASS  ./code-challenges.test.js
 // //   isDivisible
 // //   ✓ decides if the number inside it is evenly divisible by three or not (2 ms)
+
+
 
 
 
@@ -134,26 +138,29 @@ const randomNouns1 = ["streetlamp", "potato", "teeth", "conclusion", "nephew"]
 const randomNouns2 = ["temperature", "database", "chopsticks", "mango"]
 // Expected output: ["Temperature", "Database", "Chopsticks", "Mango"]
 
-// describe("allCaps",() => {
-//     it("takes in an array of words and returns an array with all the words capitalized.", () => {
-//         expect (allCaps(randomNouns1)).toEqual(["Streetlamp", "Potato", "Teeth", "Conclusion", "Nephew"])
-//         expect (allCaps(randomNouns2)).toEqual(["Temperature", "Database", "Chopsticks", "Mango"])
-//          })
-//         })
+describe("allCaps",() => {
+    it("takes in an array of words and returns an array with all the words capitalized.", () => {
+        expect (allCaps(randomNouns1)).toEqual(["Streetlamp", "Potato", "Teeth", "Conclusion", "Nephew"])
+        expect (allCaps(randomNouns2)).toEqual(["Temperature", "Database", "Chopsticks", "Mango"])
+         })
+        })
        
 // // b) Create the function that makes the test pass.
 
-// const allCaps = (array) => {
-//    return array.map((string) => { 
-//    return string.charAt(0).toUpperCase() + string.slice(1)
-//    })
-// }
+const allCaps = (array) => {
+   return array.map((string) => { 
+   return string.charAt(0).toUpperCase() + string.slice(1)
+   })
+}
 
 // console.log(allCaps(randomNouns1))
 
 // //output: PASS  ./code-challenges.test.js
 //   allCaps
 //   ✓ takes in an array of words and returns an array with all the words capitalized. (3 ms)
+
+
+
 
 
 
@@ -185,27 +192,27 @@ const vowelTester3 = "challenges"
 // Expected output: 2
 
 
-//  describe("firstVowelIndex",() => {
-//      it("takes in a string and logs the index of the first vowel.", () => {
-//          expect (firstVowelIndex(vowelTester1)).toEqual(1)
-//          expect (firstVowelIndex(vowelTester2)).toEqual(0)
-//          expect (firstVowelIndex(vowelTester3)).toEqual(2)
-//           })
-//          })
+ describe("firstVowelIndex",() => {
+     it("takes in a string and logs the index of the first vowel.", () => {
+         expect (firstVowelIndex(vowelTester1)).toEqual(1)
+         expect (firstVowelIndex(vowelTester2)).toEqual(0)
+         expect (firstVowelIndex(vowelTester3)).toEqual(2)
+          })
+         })
 
 
 
 // // b) Create the function that makes the test pass.
 
 
-// const firstVowelIndex = (string) =>{ 
-//     const vowels = ['a', 'e', 'i', 'o', 'u']
-//     for (let i = 0; i < string.length; i++) {
-//         if(vowels.includes(string[i])) {
-//             return i
-//         }
-//     }
-// }
+const firstVowelIndex = (string) =>{ 
+    const vowels = ['a', 'e', 'i', 'o', 'u']
+    for (let i = 0; i < string.length; i++) {
+        if(vowels.includes(string[i])) {
+            return i
+        }
+    }
+}
 
 // console.log(firstVowelIndex(vowelTester1))
 // //output: 1

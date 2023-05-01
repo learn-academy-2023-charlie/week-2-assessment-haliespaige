@@ -16,6 +16,7 @@ Researched answer:
 A parameter is a named variable passed into a function that is used to take in arguments into the function. 
 An argument is the real value passed into the function through a parameter
 
+
 2. The JavaScript built in method .map() takes predefined parameters. What are they? Which are required and which are optional?
 
 Your answer: 
@@ -23,6 +24,7 @@ The .map() takes in an array as a predefined parameter, iterates through the arr
 
 Researched answer:
 The .map() method outputs a new array with results of calling a function on every element in the calling array. 
+
 
 
 3. What is the difference between map and filter?
@@ -36,6 +38,7 @@ Map returns a new array of elements where a function has been executed on the el
 Filter returns a new array of the elements of the original array with no change to the original values
 
 
+
 4. What is iteration?
 
 Your answer:
@@ -43,6 +46,7 @@ Iteration is moving through the indexed location of an array from left to right.
 
 Researched answer:
 Iterations is traversing through an array and executing code once for each element in an array. 
+
 
 5. What is the difference between a function and a method?
 
@@ -55,6 +59,7 @@ Researched answer:
 A method is solely passed on the object on which it is called.
 A function is independent of any object 
 
+
 6. STRETCH: What is hoisting in JavaScript?
 
 Your answer: 
@@ -63,6 +68,8 @@ Hoisting is when a variable is used before it is declared
 Researched answer:
 Hoisting is a default behavior in JavaScript that moves declarations to the top of the current scope. 
 ## Looking Ahead: Terms for Next Week
+
+
 
 Research and define the following terms to the best of your ability.
 
